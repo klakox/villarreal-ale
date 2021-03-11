@@ -1,0 +1,24 @@
+name: "JC Castillo"
+output_dir: "."
+navbar:
+  title: "Alejandro Villarreal Monsalve"
+  right:
+  - text: "Research"
+    href: research.html
+  - text: "Links"
+    href: links.html
+  - text: "Contact"
+    href: contact.html
+  - icon: ai-cv fa-lg
+    href: documents/CV.pdf
+  - icon: fa-github fa-lg
+    href: http://github.com/klakox
+
+output:
+  html_document:
+    theme: cerulean
+    highlight: pygments
+    css: style4.css
+    includes:
+      in_header: academicons.html
+      # after_body: footer.html
