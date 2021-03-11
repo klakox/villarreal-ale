@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Juan Carlos Castillo</title>
+
+<script src="site_libs/header-attrs-2.7.1/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link rel="stylesheet" href="site_libs/academicons-1.8.6/css/academicons.css" />  
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+<link rel="stylesheet" href="style4.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Alejandro Villarreal Monsalve</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="research.html">Research</a>
+</li>
+<li>
+  <a href="links.html">Links</a>
+</li>
+<li>
+  <a href="contact.html">Contact</a>
+</li>
+<li>
+  <a href="documents/CV.pdf">
+    <span class="ai ai-cv fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Juan Carlos Castillo</h1>
+<h4 class="author"></h4>
+
+</div>
+
+
+<p><br/></p>
+<p><br/></p>
+<div id="software" class="section level3">
+<h3>Software</h3>
+<p>Uso principalmente software libre.</p>
+<p><img src="images/logos2.png" style="width:90%" align="left"></p>
+<p><br clear="all" /></p>
+<hr />
+<ul>
+<li><p>Análisis de datos con <a href="https://cran.r-project.org/">R</a>, usando diversos paquetes como <a href="https://www.tidyverse.org/">Tidyverse</a>.</p></li>
+<li><p>Escritura de documentos <a href="https://yihui.name/knitr/">Knitr</a> &amp; Rmarkdown</p></li>
+<li><p>Presentaciones <a href="https://slides.yihui.name/xaringan/">Xaringan</a> .</p></li>
+<li><p>Gráficos interactivos <a href="https://plotly.com/r/">Plotly</a></p></li>
+<li><p>Creación de tableros dinámicos <a href="https://rstudio.github.io/shinydashboard/">Shiny &amp; Shinydashboard</a></p></li>
+</ul>
+<p><br/></p>
+</div>
+<div id="following-people" class="section level3">
+<h3>Following people</h3>
+<ul>
+<li><a href="https://github.com/yihui">Yihui Xie</a></li>
+</ul>
+<p><br/></p>
+</div>
+<div id="miscellaneous" class="section level3">
+<h3>Miscellaneous</h3>
+<p><strong>Herramienta muy útil para la enseñanza de distribuciones de probabilidad, distribuciones muestrales, pruebas de hipótesis e intervalos de confianza</strong></p>
+<ul>
+<li><a href="https://homepage.divms.uiowa.edu/~mbognar/">Probability Distribution Applets</a></li>
+</ul>
+<!-- - [Leveraging labelled data in R](https://www.pipinghotdata.com/posts/2020-12-23-leveraging-labelled-data-in-r/) -->
+<!-- - [Book IMS: Introduction to Modern Statistics](https://openintro-ims.netlify.app/) -->
+<!-- - [Book Tidy Modeling with R](https://www.tmwr.org/) -->
+<!-- -[explorer: R package for exploring data with a Shiny app](https://rolkra.github.io/start-to-explore/) -->
+<!-- - [R modelsummary](https://vincentarelbundock.github.io/modelsummary/) -->
+<!-- - [Modern R with the tidyverse](https://b-rodrigues.github.io/modern_R/) -->
+<!-- - [Libro (bookdown): Introducción a la ciencia de Datos, de Rafael Irizarry](https://rafalab.github.io/dslibro/) -->
+<!-- - [Teach R Interactive courses](https://education.rstudio.com/blog/2020/05/teach-interactive-course/) -->
+<!-- - [Applied R in the classroom](https://onlinelibrary.wiley.com/doi/full/10.1111/1467-8462.12362) -->
+<!-- **Visualization** -->
+<!-- -[BEAUTIFUL AND INFORMATIVE DATA VISUALISATION](https://ourcodingclub.github.io/tutorials/datavis/) -->
+<!-- - [esquisse: ggplot2 builder addin](https://dreamrs.github.io/esquisse/) -->
+<!-- - [ggstatsplot: ggplot2 Based Plots with Statistical Details] (https://github.com/IndrajeetPatil/ggstatsplot) -->
+<!-- - [rtist: fancy color palettes in R graphs](https://github.com/tomasokal/rtist) -->
+<!-- - [Designing GGplots - con una muy buena presentación en Xaringan](https://designing-ggplots.netlify.app/#1) -->
+<!-- - [ggdist](https://mjskay.github.io/ggdist/) -->
+<!-- - [Seeing Theory](https://seeing-theory.brown.edu/index.html#secondPage) -->
+<!-- - [RStats illustrations](https://github.com/allisonhorst/stats-illustrations) -->
+<!-- - [teacups-giraffes-and-statistics](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html) -->
+<!-- - [ExPanDaR, interactive analysis](https://joachim-gassen.github.io/2019/12/explore-your-data-with-expand/) -->
+<!-- - [Workshop Designing ggplots](https://github.com/malcolmbarrett/designing.ggplots) -->
+<!-- - [ThinkR, data visualization with R](https://thinkr.biz/) -->
+<!-- - [SEM diagrams in R](http://rich-iannone.github.io/DiagrammeR/modification.html), see also [this](https://rpubs.com/tjmahr/sem_diagrammer). -->
+<!-- - [Graphics principles cheatsheet](https://graphicsprinciples.github.io/) -->
+<!-- - [Practical ggplot](https://wilkelab.org/practicalgg/) -->
+<!-- **Reporting, workflows & communication** -->
+<!-- - [distill: article writing in RMarkdown](https://rstudio.github.io/distill/basics.html) -->
+<!-- - [remedy - add-in for markdown writing in RStudio](https://github.com/ThinkR-open/remedy) -->
+<!-- - [Xaringan slides sharing](https://www.garrickadenbuie.com/blog/sharing-xaringan-slides/) -->
+<!-- - [XaringanExtra](https://pkg.garrickadenbuie.com/xaringanExtra/) -->
+<!-- - [Publicación de artículos académicos: buenas prácticas y recomendaciones para la redacción y envío a revistas científicas](https://repositori.upf.edu/handle/10230/44599) -->
+<!-- - [Flipbooks in Xaringan](https://evamaerey.github.io/little_flipbooks_library/about/what_the_flipbook) -->
+<!-- - [Pimp my RMD](https://holtzy.github.io/Pimp-my-rmd/) -->
+<!-- - [workflowr: organized + reproducible + shareable data science in R](https://github.com/jdblischak/workflowr) -->
+<!-- - [Making R & Python work in Atom](https://jstaf.github.io/2018/03/25/atom-ide.html) -->
+<!-- - [Robert Mitchell's tutorial to build rmarkown websites](http://robertmitchellv.com/blog-building-site-with-rmarkdown.html) -->
+<!-- - [Emily Zabor's tutorial to build rmarkown websites](http://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html) -->
+<!-- - [Good tips for academic writing from Kevin Lafferty](http://trophiccascades.forestry.oregonstate.edu/sites/trophic/files/Lafferty_WritingScientificPaper.pdf) -->
+<!-- - [Guidelines for quantitative submissions ASR](http://journals.sagepub.com/doi/abs/10.1177/0003122418806282) -->
+</div>
+
+  </div> <!-- articleBandContent -->
+</div> <!-- pageContent -->
+
+<footer class="no-print">
+  <div id="rbmvFooter" class="footer">
+    <div class="footerContent">
+
+      <!-- column 1 -->
+      <div class="col-md-4">
+        <a href="mailto:villarreal.alejandro@correounivalle.edu.co">
+          <i class="fa fa-envelope fa-lg"></i> villarreal.alejandro@
+                                              correounivalle.edu.co </
+        <br>
+      </div>
+
+      <!-- column 2 -->
+     
+
+      <!-- column 3 -->
+      <div class="col-md-4">
+        <p class="text"> Site generated (almost) completely with Rmarkdown and hosted in Github pages. </p>
+        <br>
+        <br>
+      </div>
+      <div class="top">
+        <p class="pull-right">
+          <a id="scrollTop" class="slowly" onclick="slowScrollTop()" href=#>
+            <i class="fa fa-angle-double-up"></i> Back to top
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- slow scrollTop function -->
+  <script type="text/javascript">
+    function slowScrollTop() {
+      $('body').animate({ scrollTop: 0 }, 'slow');
+    }
+  </script>
+
+  <!-- slow scrolling to anchor function -->
+  <script type="text/javascript">
+    $('a').click(function slowScroll() {
+      $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+      }, 'slow');
+      return false;
+    });
+  </script>
+
+  <!-- page transition -->
+  <script type="text/javascript">
+    // fade content and not navbar in and out
+    $(document).ready(function fadeInOut() {
+      var non_navbar = $('.fluid-row,.section.level2,.summary,p,acrticle,h3,footer')
+      non_navbar.css('display', 'none');
+      non_navbar.fadeIn(800);
+
+      $('.navbar-link').click(function(event) {
+        event.preventDefault();
+        newLocation = this.href;
+
+        non_navbar.fadeOut('slow', newpage);
+      });
+
+      function newpage() {
+        window.location = newLocation;
+      }
+    });
+  </script>
+
+  <!-- google analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-83611715-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+    </div>
+  </div>
+
+</footer>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
